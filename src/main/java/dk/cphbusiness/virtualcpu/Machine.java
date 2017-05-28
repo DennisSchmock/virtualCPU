@@ -166,7 +166,7 @@ public class Machine {
             }
             cpu.incIp();
         }
-        
+       
         //01vv vvvr	MOV v r	r ← v; IP++
         if ((instr & 0b1100_0000) == 0b0100_0000) {
             int r = (instr & 0b0000_0001);
